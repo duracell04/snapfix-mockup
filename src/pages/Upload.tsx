@@ -59,39 +59,60 @@ const Upload = () => {
                 {/* Photo prompts */}
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="space-y-3">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-border hover:border-primary smooth-transition cursor-pointer">
-                      <Camera className="h-12 w-12 text-muted-foreground" />
+                    <div className="aspect-video bg-muted rounded-lg overflow-hidden border-2 border-primary hover:border-primary-hover smooth-transition cursor-pointer group relative">
+                      <img 
+                        src="/images/demo-door-context.jpg" 
+                        alt="Context shot of door" 
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 smooth-transition flex items-center justify-center">
+                        <Camera className="h-12 w-12 text-white" />
+                      </div>
                     </div>
                     <div className="space-y-1">
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-medium">1. Context shot</span>
-                        <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
+                        <CheckCircle2 className="h-4 w-4 text-success" />
                       </div>
                       <p className="text-xs text-muted-foreground">Full door from 5 feet back</p>
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-border hover:border-primary smooth-transition cursor-pointer">
-                      <Camera className="h-12 w-12 text-muted-foreground" />
+                    <div className="aspect-video bg-muted rounded-lg overflow-hidden border-2 border-primary hover:border-primary-hover smooth-transition cursor-pointer group relative">
+                      <img 
+                        src="/images/demo-door-closeup.jpg" 
+                        alt="Close-up of door hardware issue" 
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 smooth-transition flex items-center justify-center">
+                        <Camera className="h-12 w-12 text-white" />
+                      </div>
                     </div>
                     <div className="space-y-1">
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-medium">2. Close-up</span>
-                        <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
+                        <CheckCircle2 className="h-4 w-4 text-success" />
                       </div>
                       <p className="text-xs text-muted-foreground">Detail of the problem area</p>
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-border hover:border-primary smooth-transition cursor-pointer">
-                      <Camera className="h-12 w-12 text-muted-foreground" />
+                    <div className="aspect-video bg-muted rounded-lg overflow-hidden border-2 border-primary hover:border-primary-hover smooth-transition cursor-pointer group relative">
+                      <img 
+                        src="/images/demo-door-scale.jpg" 
+                        alt="Scale reference with coin" 
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 smooth-transition flex items-center justify-center">
+                        <Camera className="h-12 w-12 text-white" />
+                      </div>
                     </div>
                     <div className="space-y-1">
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-medium">3. Scale reference</span>
-                        <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
+                        <CheckCircle2 className="h-4 w-4 text-success" />
                       </div>
                       <p className="text-xs text-muted-foreground">Add a coin or credit card</p>
                     </div>
