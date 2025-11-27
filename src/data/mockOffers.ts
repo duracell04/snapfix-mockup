@@ -122,7 +122,11 @@ export const mockTicket: TicketData = {
   ticketId: "TKT-78421",
   category: "Door hardware",
   sku: "Fix misaligned strike plate",
-  photos: [],
+  photos: [
+    "/images/demo-door-context.jpg",
+    "/images/demo-door-closeup.jpg", 
+    "/images/demo-door-scale.jpg"
+  ],
   aiRationale: "Latch does not seat properly; wear pattern near strike hole suggests misalignment. Common issue caused by door settling or house shifting.",
   location: { city: "Chicago", zip: "60622" },
   priority: "Standard",

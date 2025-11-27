@@ -32,12 +32,27 @@ const Offers = () => {
       <main className="flex-1 container py-12">
         {/* Ticket summary */}
         <Card className="mb-8 p-6 bg-muted/30">
-          <div className="flex items-start justify-between gap-4">
-            <div className="space-y-2 flex-1">
+          <div className="flex flex-col md:flex-row gap-6">
+            {/* Photos preview */}
+            <div className="flex gap-2 md:w-64">
+              {mockTicket.photos.slice(0, 3).map((photo, idx) => (
+                <div key={idx} className="flex-1 aspect-square rounded-lg overflow-hidden bg-muted">
+                  <img 
+                    src={photo} 
+                    alt={`Uploaded photo ${idx + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+            
+            {/* Details */}
+            <div className="flex-1 space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="font-mono">{mockTicket.ticketId}</span>
                 <span>•</span>
                 <span>{mockTicket.location.city}, {mockTicket.location.zip}</span>
+                <Badge variant="secondary" className="ml-auto">{mockTicket.priority}</Badge>
               </div>
               <h2 className="text-2xl font-bold">{mockTicket.sku}</h2>
               <div className="flex items-start gap-2 text-sm">
@@ -45,7 +60,6 @@ const Offers = () => {
                 <p className="text-muted-foreground">{mockTicket.aiRationale}</p>
               </div>
             </div>
-            <Badge variant="secondary">{mockTicket.priority}</Badge>
           </div>
         </Card>
 
