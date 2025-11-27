@@ -3,20 +3,18 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useParams, Link, Navigate } from "react-router-dom";
-import { cityData } from "@/data/cityData";
+import Link from "next/link";
+import { CityData } from "@/data/cityData";
 import { 
   MapPin, Clock, Users, Star, DollarSign, Camera, 
   Wrench, CheckCircle2, TrendingUp 
 } from "lucide-react";
 
-const City = () => {
-  const { citySlug } = useParams<{ citySlug: string }>();
-  const city = citySlug ? cityData[citySlug.toLowerCase()] : null;
+type CityProps = {
+  city: CityData;
+};
 
-  if (!city) {
-    return <Navigate to="/" replace />;
-  }
+const City = ({ city }: CityProps) => {
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -42,13 +40,13 @@ const City = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="text-lg h-14 px-8" asChild>
-                  <Link to="/upload">
+                  <Link href="/upload">
                     <Camera className="mr-2 h-5 w-5" />
                     Get price now
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg h-14 px-8" asChild>
-                  <Link to="/offers">
+                  <Link href="/offers">
                     <Users className="mr-2 h-5 w-5" />
                     Browse {city.name} pros
                   </Link>
@@ -101,8 +99,8 @@ const City = () => {
               ))}
             </div>
             <p className="text-center text-muted-foreground mt-8">
-              Don't see your neighborhood? We're expanding coverage daily.{" "}
-              <Link to="/" className="text-primary hover:underline">Join the waitlist</Link>
+              Don't see your neighborhood- We're expanding coverage daily.{" "}
+              <Link href="/" className="text-primary hover:underline">Join the waitlist</Link>
             </p>
           </div>
         </section>
@@ -339,14 +337,14 @@ const City = () => {
         <section className="bg-gradient-to-br from-primary to-primary-hover py-20">
           <div className="container text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Ready to fix your door in {city.name}?
+              Ready to fix your door in {city.name}-
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Join hundreds of {city.name} residents who've discovered the easier way 
               to handle door repairs.
             </p>
             <Button size="lg" variant="secondary" className="text-lg h-14 px-8" asChild>
-              <Link to="/upload">
+              <Link href="/upload">
                 <Camera className="mr-2 h-5 w-5" />
                 Get your price now
               </Link>

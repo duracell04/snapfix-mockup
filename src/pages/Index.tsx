@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Camera, Users, Star, Shield, Clock, CheckCircle2, Wrench, DoorClosed } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -19,18 +19,18 @@ const Index = () => {
               Snap, fix, done.
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-              Fixed price from a photo. Book a vetted pro in minutes — most small fixes done in one visit.
+              Fixed price from a photo. Book a vetted pro in minutes - most small fixes done in one visit.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg h-14 px-8" asChild>
-                <Link to="/upload">
+                <Link href="/upload">
                   <Camera className="mr-2 h-5 w-5" />
                   Get price from a photo
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="text-lg h-14 px-8" asChild>
-                <Link to="/offers">
+                <Link href="/offers">
                   <Users className="mr-2 h-5 w-5" />
                   Pick your pro
                 </Link>
@@ -74,7 +74,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold">1. Snap</h3>
                 <p className="text-muted-foreground">
-                  Take 2–3 guided photos: context, close-up, and scale. Our AI analyzes the issue instantly.
+                  Take 2-3 guided photos: context, close-up, and scale. Our AI analyzes the issue instantly.
                 </p>
               </Card>
 
@@ -84,7 +84,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold">2. Pick or go</h3>
                 <p className="text-muted-foreground">
-                  Get 3–5 curated offers with fixed prices, or tap "Book fastest" for instant matching.
+                  Get 3-5 curated offers with fixed prices, or tap "Book fastest" for instant matching.
                 </p>
               </Card>
 
@@ -110,7 +110,7 @@ const Index = () => {
             </div>
             <h2 className="text-4xl font-bold">We fix what bugs you most</h2>
             <p className="text-xl text-muted-foreground">
-              Starting with door hardware — those small annoyances that you've been meaning to fix for months.
+              Starting with door hardware - those small annoyances that you've been meaning to fix for months.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Badge variant="secondary" className="text-base py-2 px-4">Latch/strike plate</Badge>
@@ -124,7 +124,7 @@ const Index = () => {
         {/* Value props */}
         <section className="bg-muted/30 py-20">
           <div className="container">
-            <h2 className="text-4xl font-bold text-center mb-16">Why Snap'n'Fix?</h2>
+            <h2 className="text-4xl font-bold text-center mb-16">Why Snap'n'Fix-</h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="space-y-4">
                 <Clock className="h-12 w-12 text-primary" />
@@ -138,7 +138,7 @@ const Index = () => {
                 <Users className="h-12 w-12 text-primary" />
                 <h3 className="text-2xl font-bold">Curated choice</h3>
                 <p className="text-muted-foreground">
-                  See 3–5 top-rated pros with transparent pricing, ratings, and portfolios. You pick, or we match instantly.
+                  See 3-5 top-rated pros with transparent pricing, ratings, and portfolios. You pick, or we match instantly.
                 </p>
               </div>
 
@@ -158,14 +158,14 @@ const Index = () => {
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold">Now serving</h2>
             <div className="flex flex-wrap justify-center gap-4 text-lg">
-              <Link to="/cities/chicago" className="text-primary hover:underline font-medium">Chicago</Link>
-              <span className="text-muted-foreground">•</span>
-              <Link to="/cities/miami" className="text-primary hover:underline font-medium">Miami</Link>
-              <span className="text-muted-foreground">•</span>
-              <Link to="/cities/seattle" className="text-primary hover:underline font-medium">Seattle</Link>
+              <Link href="/cities/chicago" className="text-primary hover:underline font-medium">Chicago</Link>
+              <span className="text-muted-foreground">|</span>
+              <Link href="/cities/miami" className="text-primary hover:underline font-medium">Miami</Link>
+              <span className="text-muted-foreground">|</span>
+              <Link href="/cities/seattle" className="text-primary hover:underline font-medium">Seattle</Link>
             </div>
             <div className="pt-8">
-              <p className="text-muted-foreground mb-4">Not in your city yet?</p>
+              <p className="text-muted-foreground mb-4">Not in your city yet-</p>
               <div className="flex gap-2 max-w-md mx-auto">
                 <input 
                   type="email" 

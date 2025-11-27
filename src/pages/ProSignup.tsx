@@ -1,3 +1,5 @@
+'use client';
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,7 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { 
   User, MapPin, Wrench, DollarSign, Upload, Shield, 
   Calendar, CheckCircle2, Info, FileText 
@@ -17,7 +19,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 
 const ProSignup = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const { toast } = useToast();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -91,7 +93,7 @@ const ProSignup = () => {
     });
     
     setTimeout(() => {
-      navigate("/pro");
+      router.push("/pro");
     }, 2000);
   };
 
@@ -99,7 +101,7 @@ const ProSignup = () => {
     setFormData(prev => ({
       ...prev,
       services: prev.services.includes(service)
-        ? prev.services.filter(s => s !== service)
+        - prev.services.filter(s => s !== service)
         : [...prev.services, service]
     }));
   };
@@ -108,7 +110,7 @@ const ProSignup = () => {
     setFormData(prev => ({
       ...prev,
       availability: prev.availability.includes(slot)
-        ? prev.availability.filter(s => s !== slot)
+        - prev.availability.filter(s => s !== slot)
         : [...prev.availability, slot]
     }));
   };
@@ -130,7 +132,7 @@ const ProSignup = () => {
                 <div 
                   key={s} 
                   className={`h-2 flex-1 rounded-full smooth-transition ${
-                    s <= step ? 'bg-primary' : 'bg-muted'
+                    s <= step - 'bg-primary' : 'bg-muted'
                   }`}
                 />
               ))}
@@ -220,7 +222,7 @@ const ProSignup = () => {
                   <h2 className="text-2xl font-bold">Service Area</h2>
                 </div>
                 <p className="text-muted-foreground">
-                  Where do you provide services?
+                  Where do you provide services-
                 </p>
               </div>
 
@@ -300,7 +302,7 @@ const ProSignup = () => {
                   <h2 className="text-2xl font-bold">Services & Experience</h2>
                 </div>
                 <p className="text-muted-foreground">
-                  What door hardware services do you offer?
+                  What door hardware services do you offer-
                 </p>
               </div>
 
@@ -609,11 +611,11 @@ const ProSignup = () => {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Business:</span>
-                      <span className="font-medium">{formData.businessName || "—"}</span>
+                      <span className="font-medium">{formData.businessName || "-"}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Location:</span>
-                      <span className="font-medium">{formData.city || "—"}, {formData.zipCode || "—"}</span>
+                      <span className="font-medium">{formData.city || "-"}, {formData.zipCode || "-"}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Services:</span>
@@ -621,7 +623,7 @@ const ProSignup = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Experience:</span>
-                      <span className="font-medium">{formData.experience || "—"} years</span>
+                      <span className="font-medium">{formData.experience || "-"} years</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Warranty:</span>
@@ -634,12 +636,12 @@ const ProSignup = () => {
                   <div className="flex gap-2">
                     <Info className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <div className="space-y-1 text-sm">
-                      <p className="font-medium">What happens next?</p>
+                      <p className="font-medium">What happens next-</p>
                       <ul className="text-muted-foreground space-y-1">
-                        <li>• We'll review your application within 2-3 business days</li>
-                        <li>• Background check and credential verification</li>
-                        <li>• Phone interview with our team</li>
-                        <li>• Account setup and training</li>
+                        <li>- We'll review your application within 2-3 business days</li>
+                        <li>- Background check and credential verification</li>
+                        <li>- Phone interview with our team</li>
+                        <li>- Account setup and training</li>
                       </ul>
                     </div>
                   </div>

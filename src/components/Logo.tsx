@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+'use client';
+
+import Link from "next/link";
 
 interface LogoProps {
   className?: string;
@@ -9,7 +11,7 @@ export const Logo = ({ className = "", variant = "default" }: LogoProps) => {
   const color = variant === "white" ? "currentColor" : "hsl(var(--primary))";
   
   return (
-    <Link to="/" className={`flex items-center gap-2 ${className}`}>
+    <Link href="/" className={`flex items-center gap-2 ${className}`}>
       <svg 
         width="32" 
         height="32" 

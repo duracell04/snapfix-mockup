@@ -1,3 +1,5 @@
+'use client';
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -5,23 +7,22 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Camera, Upload as UploadIcon, CheckCircle2, Info } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 const Upload = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [step, setStep] = useState(1);
-  const [photos, setPhotos] = useState<string[]>([]);
 
   const handleContinue = () => {
     if (step < 3) {
       setStep(step + 1);
     } else {
       // Navigate to offers
-      navigate("/offers");
+      router.push("/offers");
     }
   };
 
@@ -51,7 +52,7 @@ const Upload = () => {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold">Upload photos</h1>
                 <p className="text-muted-foreground">
-                  Take or upload 2–3 photos to help us understand the issue
+                  Take or upload 2-3 photos to help us understand the issue
                 </p>
               </div>
 
@@ -123,7 +124,7 @@ const Upload = () => {
                 <div className="border-2 border-dashed border-border rounded-lg p-12 text-center hover:border-primary smooth-transition cursor-pointer">
                   <UploadIcon className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                   <p className="text-lg font-medium mb-2">Drag photos here or click to browse</p>
-                  <p className="text-sm text-muted-foreground">Supports JPG, PNG, HEIC • Max 10MB per file</p>
+                  <p className="text-sm text-muted-foreground">Supports JPG, PNG, HEIC - Max 10MB per file</p>
                 </div>
 
                 {/* Tips */}
@@ -133,9 +134,9 @@ const Upload = () => {
                     <div className="space-y-1 text-sm">
                       <p className="font-medium">Tips for great photos:</p>
                       <ul className="text-muted-foreground space-y-1">
-                        <li>• Use good lighting — natural light works best</li>
-                        <li>• Hold camera steady to avoid blur</li>
-                        <li>• Include the entire problem area</li>
+                        <li>- Use good lighting - natural light works best</li>
+                        <li>- Hold camera steady to avoid blur</li>
+                        <li>- Include the entire problem area</li>
                       </ul>
                     </div>
                   </div>
@@ -191,7 +192,7 @@ const Upload = () => {
 
                 {/* Symptom */}
                 <div className="space-y-3">
-                  <Label>What's the problem?</Label>
+                  <Label>What's the problem-</Label>
                   <RadioGroup defaultValue="latch">
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="latch" id="latch" />
@@ -236,7 +237,7 @@ const Upload = () => {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold">Almost there</h1>
                 <p className="text-muted-foreground">
-                  Where should the pro come, and how soon?
+                  Where should the pro come, and how soon-
                 </p>
               </div>
 
@@ -256,7 +257,7 @@ const Upload = () => {
 
                 {/* Priority */}
                 <div className="space-y-3">
-                  <Label>When do you need this fixed?</Label>
+                  <Label>When do you need this fixed-</Label>
                   <RadioGroup defaultValue="standard">
                     <Card className="p-4 cursor-pointer hover:border-primary smooth-transition">
                       <div className="flex items-start space-x-3">
@@ -279,10 +280,10 @@ const Upload = () => {
                         <div className="flex-1">
                           <Label htmlFor="priority" className="font-medium cursor-pointer flex items-center justify-between">
                             <span>Priority</span>
-                            <Badge variant="secondary" className="bg-secondary">60–120 min</Badge>
+                            <Badge variant="secondary" className="bg-secondary">60-120 min</Badge>
                           </Label>
                           <p className="text-sm text-muted-foreground mt-1">
-                            Faster arrival, may cost 15–25% more
+                            Faster arrival, may cost 15-25% more
                           </p>
                         </div>
                       </div>

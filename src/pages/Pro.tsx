@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Calendar, Zap, Shield, TrendingUp, Users } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Pro = () => {
   return (
@@ -21,7 +21,7 @@ const Pro = () => {
               Set your prices. Work your schedule. Get paid fast.
             </p>
             <Button size="lg" className="text-lg h-14 px-8" asChild>
-              <Link to="/pro/signup">Become a Pro</Link>
+              <Link href="/pro/signup">Become a Pro</Link>
             </Button>
             <p className="text-sm text-muted-foreground pt-4">
               Independent contractor. Snap'n'Fix does not provide tools, uniforms, or schedules.
@@ -38,7 +38,7 @@ const Pro = () => {
                 <DollarSign className="h-12 w-12 text-primary" />
                 <h3 className="text-2xl font-bold">You set the price</h3>
                 <p className="text-muted-foreground">
-                  Full control over your pricing. No lead fees — we only charge a platform fee when you get paid.
+                  Full control over your pricing. No lead fees - we only charge a platform fee when you get paid.
                 </p>
               </Card>
 
@@ -140,7 +140,7 @@ const Pro = () => {
                 <h3 className="text-3xl font-bold">Grow your business</h3>
                 <p className="text-muted-foreground text-lg">
                   Start with door hardware, expand to more categories. Build a portfolio that 
-                  showcases your expertise. We're growing — grow with us.
+                  showcases your expertise. We're growing - grow with us.
                 </p>
               </div>
 
@@ -168,12 +168,12 @@ const Pro = () => {
         {/* CTA */}
         <section className="container py-20">
           <Card className="p-12 text-center bg-primary text-primary-foreground">
-            <h2 className="text-4xl font-bold mb-4">Ready to take control?</h2>
+            <h2 className="text-4xl font-bold mb-4">Ready to take control-</h2>
             <p className="text-xl mb-8 opacity-90">
               Join hundreds of independent pros building their repair empire
             </p>
             <Button size="lg" variant="secondary" className="text-lg h-14 px-8" asChild>
-              <Link to="/pro/signup">Apply now</Link>
+              <Link href="/pro/signup">Apply now</Link>
             </Button>
           </Card>
         </section>

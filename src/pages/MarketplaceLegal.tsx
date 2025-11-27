@@ -12,7 +12,7 @@ const MarketplaceLegal = () => {
           <div className="space-y-4">
             <h1 className="text-5xl font-bold">Marketplace Explainer</h1>
             <p className="text-xl text-muted-foreground">
-              Understanding how Snap'n'Fix works — in plain English
+              Understanding how Snap'n'Fix works - in plain English
             </p>
           </div>
 
@@ -22,7 +22,7 @@ const MarketplaceLegal = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Snap'n'Fix is a technology platform that connects customers with independent professional contractors 
                 ("Pros"). We don't employ Pros, provide them with tools or uniforms, or set their schedules. 
-                Think of us like Uber or Airbnb — we make the connection happen, but the actual repair work 
+                Think of us like Uber or Airbnb - we make the connection happen, but the actual repair work 
                 is performed by independent businesses.
               </p>
             </section>
@@ -34,23 +34,23 @@ const MarketplaceLegal = () => {
               </p>
               <ul className="space-y-2 text-muted-foreground ml-6">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Set their own prices and warranty terms</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Choose which jobs to accept</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Control their own schedule and availability</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Provide their own tools and equipment</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Carry their own insurance and licenses</span>
                 </li>
               </ul>
@@ -59,7 +59,7 @@ const MarketplaceLegal = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-bold">How payments work</h2>
               <p className="text-muted-foreground leading-relaxed">
-                When you book a job, payment is held in secure escrow. We act as an "agent of payee" — 
+                When you book a job, payment is held in secure escrow. We act as an "agent of payee" - 
                 meaning we collect payment on behalf of the Pro, hold it securely during the job, and 
                 release it once you approve the work. This protects both you and the Pro.
               </p>
@@ -68,19 +68,19 @@ const MarketplaceLegal = () => {
               </p>
               <ul className="space-y-2 text-muted-foreground ml-6">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>AI photo analysis and Pro matching</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Secure escrow and payment processing</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Dispute mediation if issues arise</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Platform support and protection</span>
                 </li>
               </ul>
@@ -89,8 +89,8 @@ const MarketplaceLegal = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-bold">Pro-set warranties</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Each Pro defines their own warranty terms (typically 14–45 days). These warranties are between 
-                you and the Pro — Snap'n'Fix is not responsible for warranty fulfillment. However, if a Pro 
+                Each Pro defines their own warranty terms (typically 14-45 days). These warranties are between 
+                you and the Pro - Snap'n'Fix is not responsible for warranty fulfillment. However, if a Pro 
                 doesn't honor their warranty, we can help mediate and may offer a discretionary Platform Protection 
                 credit (up to $100) in certain cases.
               </p>
@@ -103,34 +103,34 @@ const MarketplaceLegal = () => {
               </p>
               <ul className="space-y-2 text-muted-foreground ml-6">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Pro vetting (background checks, license verification, insurance validation)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>AI-powered photo analysis for accurate quotes</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Secure payment escrow</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Review and rating system</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Dispute resolution assistance</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
+                  <span className="text-primary mt-1">-</span>
                   <span>Customer support</span>
                 </li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-2xl font-bold">Questions?</h2>
+              <h2 className="text-2xl font-bold">Questions-</h2>
               <p className="text-muted-foreground leading-relaxed">
                 For more details, see our full{" "}
                 <a href="/legal/terms" className="text-primary hover:underline">Terms of Service</a> or 

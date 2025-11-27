@@ -39,10 +39,10 @@ export const cityData: Record<string, CityData> = {
     activePros: 47,
     avgResponseTime: "45 min",
     priceRange: {
-      strike: "$79–$109",
-      handle: "$99–$149",
-      hinge: "$89–$129",
-      rehang: "$129–$179"
+      strike: "$79-$109",
+      handle: "$99-$149",
+      hinge: "$89-$129",
+      rehang: "$129-$179"
     },
     testimonials: [
       {
@@ -86,10 +86,10 @@ export const cityData: Record<string, CityData> = {
     activePros: 38,
     avgResponseTime: "50 min",
     priceRange: {
-      strike: "$85–$119",
-      handle: "$105–$159",
-      hinge: "$95–$139",
-      rehang: "$139–$189"
+      strike: "$85-$119",
+      handle: "$105-$159",
+      hinge: "$95-$139",
+      rehang: "$139-$189"
     },
     testimonials: [
       {
@@ -133,10 +133,10 @@ export const cityData: Record<string, CityData> = {
     activePros: 42,
     avgResponseTime: "40 min",
     priceRange: {
-      strike: "$89–$119",
-      handle: "$109–$159",
-      hinge: "$99–$139",
-      rehang: "$139–$189"
+      strike: "$89-$119",
+      handle: "$109-$159",
+      hinge: "$99-$139",
+      rehang: "$139-$189"
     },
     testimonials: [
       {

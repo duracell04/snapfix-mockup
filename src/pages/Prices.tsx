@@ -8,31 +8,31 @@ const Prices = () => {
   const priceExamples = [
     {
       service: "Fix misaligned strike plate",
-      priceRange: "$79–$109",
+      priceRange: "$79-$109",
       includes: "Adjust/shim strike plate",
       excludes: "Frame repair",
-      duration: "30–60 min"
+      duration: "30-60 min"
     },
     {
       service: "Replace door handle",
-      priceRange: "$99–$149",
+      priceRange: "$99-$149",
       includes: "New handle installation",
       excludes: "Smart locks",
-      duration: "30–45 min"
+      duration: "30-45 min"
     },
     {
       service: "Tighten/replace hinges",
-      priceRange: "$89–$129",
+      priceRange: "$89-$129",
       includes: "Up to 3 hinges",
       excludes: "Major frame damage",
-      duration: "45–90 min"
+      duration: "45-90 min"
     },
     {
       service: "Re-hang interior door",
-      priceRange: "$129–$179",
+      priceRange: "$129-$179",
       includes: "Alignment and hardware",
       excludes: "New door",
-      duration: "60–120 min"
+      duration: "60-120 min"
     }
   ];
 
@@ -45,7 +45,7 @@ const Prices = () => {
           <div className="text-center space-y-4">
             <h1 className="text-5xl font-bold">Transparent pricing</h1>
             <p className="text-xl text-muted-foreground">
-              Pros set their own prices. You see the fixed price before booking — no surprises.
+              Pros set their own prices. You see the fixed price before booking - no surprises.
             </p>
           </div>
 
@@ -99,28 +99,28 @@ const Prices = () => {
             <h2 className="text-2xl font-bold mb-6">Understanding our pricing</h2>
             <div className="space-y-4 text-muted-foreground">
               <div className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
+                <span className="text-primary font-bold">-</span>
                 <p>
                   <strong className="text-foreground">Pros set their own prices</strong> based on their expertise, 
                   materials, and local market rates.
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
+                <span className="text-primary font-bold">-</span>
                 <p>
                   <strong className="text-foreground">Fixed price guarantee</strong> means no surprise charges. 
                   If the job changes significantly, pros will discuss it with you first.
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
+                <span className="text-primary font-bold">-</span>
                 <p>
                   <strong className="text-foreground">10% Speed & Trust Fee</strong> covers secure escrow, 
                   AI matching, dispute mediation, and platform support.
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
+                <span className="text-primary font-bold">-</span>
                 <p>
                   <strong className="text-foreground">Price variations</strong> reflect pro experience, 
                   location, warranty terms, and availability.
@@ -131,9 +131,9 @@ const Prices = () => {
 
           {/* Warranty info */}
           <div className="text-center space-y-4 pt-8">
-            <h3 className="text-2xl font-bold">What about warranties?</h3>
+            <h3 className="text-2xl font-bold">What about warranties-</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Each pro sets their own warranty terms (typically 14–45 days). You'll see the warranty details 
+              Each pro sets their own warranty terms (typically 14-45 days). You'll see the warranty details 
               before booking. If something goes wrong within the warranty period, your pro will make it right.
             </p>
           </div>

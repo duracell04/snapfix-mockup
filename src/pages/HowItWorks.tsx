@@ -28,7 +28,7 @@ const HowItWorks = () => {
                 Snap photos
               </h2>
               <p className="text-lg text-muted-foreground">
-                Take 2–3 guided photos: context shot, close-up of the issue, and scale reference (like a coin). 
+                Take 2-3 guided photos: context shot, close-up of the issue, and scale reference (like a coin). 
                 Our AI analyzes the photos to understand what needs fixing.
               </p>
               <ul className="space-y-2 text-muted-foreground">
@@ -69,13 +69,13 @@ const HowItWorks = () => {
                 Get curated offers
               </h2>
               <p className="text-lg text-muted-foreground">
-                Within seconds, receive 3–5 offers from vetted pros near you. Each offer includes a fixed price, 
+                Within seconds, receive 3-5 offers from vetted pros near you. Each offer includes a fixed price, 
                 live ETA, ratings, portfolio, and warranty terms.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>Transparent pricing — no surprises</span>
+                  <span>Transparent pricing - no surprises</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
@@ -142,7 +142,7 @@ const HowItWorks = () => {
               </h2>
               <p className="text-lg text-muted-foreground">
                 Your pro shows up with the right tools and parts based on the photos. 
-                Most jobs are completed in one visit, typically 30–90 minutes.
+                Most jobs are completed in one visit, typically 30-90 minutes.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">

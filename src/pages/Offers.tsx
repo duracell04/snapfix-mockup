@@ -1,3 +1,5 @@
+'use client';
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -50,7 +52,7 @@ const Offers = () => {
             <div className="flex-1 space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="font-mono">{mockTicket.ticketId}</span>
-                <span>•</span>
+                <span>-</span>
                 <span>{mockTicket.location.city}, {mockTicket.location.zip}</span>
                 <Badge variant="secondary" className="ml-auto">{mockTicket.priority}</Badge>
               </div>
@@ -100,9 +102,9 @@ const Offers = () => {
                           <Star className="h-4 w-4 fill-primary text-primary" />
                           <span className="font-medium">{offer.rating}</span>
                         </div>
-                        <span>•</span>
+                        <span>-</span>
                         <span>{offer.jobsDone} jobs</span>
-                        <span>•</span>
+                        <span>-</span>
                         <span>{Math.round(offer.firstTimeFix * 100)}% first-time-fix</span>
                       </div>
                     </div>
@@ -161,7 +163,7 @@ const Offers = () => {
 
         {/* Info box */}
         <Card className="mt-8 p-6 bg-primary/5 border-primary/20">
-          <h3 className="font-bold mb-3">What happens next?</h3>
+          <h3 className="font-bold mb-3">What happens next-</h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
               <span className="text-primary mt-1">1.</span>
