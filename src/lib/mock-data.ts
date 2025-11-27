@@ -138,9 +138,9 @@ export const MOCK_TICKET: Ticket = {
   cityId: "chicago",
   zipcode: "60622",
   photoUrls: [
-    "/assets/mock/door_front.jpg",
-    "/assets/mock/latch_close.jpg",
-    "/assets/mock/scale_card.jpg",
+    "/images/demo-door-context.jpg",
+    "/images/demo-door-closeup.jpg",
+    "/images/demo-door-scale.jpg",
   ],
   doorType: "interior",
   handleType: "lever",
