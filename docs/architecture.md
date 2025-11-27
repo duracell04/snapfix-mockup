@@ -504,3 +504,39 @@ This document is intentionally frontend-biased but backend-aware. If you change 
 - `src/lib/types.ts` (source of truth),
 - this `docs/architecture.md`,
 - microcopy on `/legal/marketplace` and `/support`.
+
+---
+
+## 10. Demo Flow — Broken Interior Door Handle
+
+Scenario: Alex’s interior bedroom door handle is loose/failing. Goal: fix it today/tomorrow with a clear price and vetted Pro, using only their phone. The flow is frontend-only, powered by static `mock-data.ts` and `types.ts`; no network or payments.
+
+### 10.1 Route spine (demo)
+
+1. `/` (landing) → hero + CTAs. Primary CTA links to `/upload?t=TKT-78421`.
+2. `/upload` (intake) → 3-step photo prompts + short form. On Continue: `/ticket?t=TKT-78421`.
+3. `/ticket` (AI summary) → shows mock Ticket (issue, suggested SKU, rationale, city/zip, priority, notes). CTA: `/offers?t=TKT-78421`.
+4. `/offers` (multi-offer) → loads Ticket + Offer[] + Pros from mocks; sort tabs (best/price/top-rated); “Book fastest now” or Select navigates to `/checkout?t=TKT-78421&o=<offerId>`.
+5. `/checkout` (fee/legal) → uses Ticket/Offer/Pro/Sku; shows job line, Speed & Trust Fee (10%), total, ETA, legal line. Confirm & pay → `/confirmed?t=TKT-78421&o=<offerId>`.
+6. `/confirmed` (booked) → success message, Pro + ETA, job chip. Optional status chips (Scheduled → On the way → Completed).
+
+Ticket/Offer lookups per page:
+- Ticket via `getMockTicketById(ticketId)` (e.g., `TKT-78421`, interior/lever/loose handle, Chicago).
+- Offers via `getMockOffersForTicket(ticketId)`.
+- Pros via `getMockProById(offer.proId)`.
+- SKU via `Ticket.suggestedSkuId` (e.g., replace handle).
+
+### 10.2 Page responsibilities (demo)
+
+- `/`: marketing only; CTA deep-links with the mock ticket id.
+- `/upload`: intake ritual; values need not persist for the demo; always routes to the mock ticket.
+- `/ticket`: displays the AI-curated brief from mocks; “See offers” advances.
+- `/offers`: ticket-aware list; sorting: best=rankingScore, lowest=price, top-rated≈rankingScore/Pro rating; Book fastest/Select passes offer id to checkout.
+- `/checkout`: fee breakdown (job + 10% fee), Pro summary, legal copy; confirm routes to confirmed.
+- `/confirmed`: closes the loop; no further logic.
+
+### 10.3 Non-goals for the demo
+
+- No backend persistence, auth, or payments.
+- No real matching/notifications.
+- All “AI” is deterministic text from mocks.
