@@ -15,6 +15,7 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Upload from "./pages/Upload";
 import Offers from "./pages/Offers";
+import City from "./pages/City";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/support" element={<Support />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/offers" element={<Offers />} />
+          <Route path="/cities/:citySlug" element={<City />} />
           <Route path="/legal/marketplace" element={<MarketplaceLegal />} />
           <Route path="/legal/terms" element={<Terms />} />
           <Route path="/legal/privacy" element={<Privacy />} />
