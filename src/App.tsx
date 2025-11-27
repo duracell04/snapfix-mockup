@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import HowItWorks from "./pages/HowItWorks";
 import Prices from "./pages/Prices";
 import Pro from "./pages/Pro";
+import ProSignup from "./pages/ProSignup";
 import Business from "./pages/Business";
 import Support from "./pages/Support";
 import MarketplaceLegal from "./pages/MarketplaceLegal";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/prices" element={<Prices />} />
           <Route path="/pro" element={<Pro />} />
+          <Route path="/pro/signup" element={<ProSignup />} />
           <Route path="/business" element={<Business />} />
           <Route path="/support" element={<Support />} />
           <Route path="/upload" element={<Upload />} />

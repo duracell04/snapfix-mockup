@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Calendar, Zap, Shield, TrendingUp, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Pro = () => {
   return (
@@ -19,8 +20,8 @@ const Pro = () => {
             <p className="text-xl md:text-2xl text-muted-foreground">
               Set your prices. Work your schedule. Get paid fast.
             </p>
-            <Button size="lg" className="text-lg h-14 px-8">
-              Become a Pro
+            <Button size="lg" className="text-lg h-14 px-8" asChild>
+              <Link to="/pro/signup">Become a Pro</Link>
             </Button>
             <p className="text-sm text-muted-foreground pt-4">
               Independent contractor. Snap'n'Fix does not provide tools, uniforms, or schedules.
@@ -171,8 +172,8 @@ const Pro = () => {
             <p className="text-xl mb-8 opacity-90">
               Join hundreds of independent pros building their repair empire
             </p>
-            <Button size="lg" variant="secondary" className="text-lg h-14 px-8">
-              Apply now
+            <Button size="lg" variant="secondary" className="text-lg h-14 px-8" asChild>
+              <Link to="/pro/signup">Apply now</Link>
             </Button>
           </Card>
         </section>
