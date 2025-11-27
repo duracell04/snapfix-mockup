@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# Welcome to your https://akalabs.io/ project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/8c2050fd-cad0-413c-ab96-af022a7813a4
+**URL**: https://akalabs.io/
 
 ## Stack
 
