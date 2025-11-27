@@ -21,8 +21,7 @@ const Upload = () => {
     if (step < 3) {
       setStep(step + 1);
     } else {
-      // Navigate to offers
-      router.push("/offers");
+      router.push("/ticket?t=TKT-78421");
     }
   };
 

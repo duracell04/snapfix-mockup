@@ -24,13 +24,13 @@ const Index = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg h-14 px-8" asChild>
-                <Link href="/upload">
+                <Link href="/upload?t=TKT-78421">
                   <Camera className="mr-2 h-5 w-5" />
                   Get price from a photo
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="text-lg h-14 px-8" asChild>
-                <Link href="/offers">
+                <Link href="/offers?t=TKT-78421">
                   <Users className="mr-2 h-5 w-5" />
                   Pick your pro
                 </Link>

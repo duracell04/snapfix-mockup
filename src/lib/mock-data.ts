@@ -155,6 +155,9 @@ export const MOCK_TICKET: Ticket = {
   updatedAt: now(),
 };
 
+export const getMockTicketById = (id: string): Ticket | undefined =>
+  id === MOCK_TICKET_ID ? MOCK_TICKET : undefined;
+
 //
 // 5. Mock Pros
 //
