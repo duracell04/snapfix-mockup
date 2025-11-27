@@ -105,9 +105,15 @@ const Offers = () => {
           <div className="flex gap-3 w-full sm:w-auto">
             <Tabs value={sortBy} onValueChange={(v) => setSortBy(v as any)} className="flex-1 sm:flex-initial">
               <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="best_overall">Best</TabsTrigger>
-                <TabsTrigger value="lowest_price">Price</TabsTrigger>
-                <TabsTrigger value="top_rated">Rating</TabsTrigger>
+                <TabsTrigger value="best_overall" className="text-white data-[state=active]:text-foreground">
+                  Best
+                </TabsTrigger>
+                <TabsTrigger value="lowest_price" className="text-white data-[state=active]:text-foreground">
+                  Price
+                </TabsTrigger>
+                <TabsTrigger value="top_rated" className="text-white data-[state=active]:text-foreground">
+                  Rating
+                </TabsTrigger>
               </TabsList>
             </Tabs>
             <Button size="lg" className="gap-2" onClick={handleBookFastest}>
