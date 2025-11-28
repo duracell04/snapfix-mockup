@@ -1,8 +1,7 @@
 {
-  "/upload/page": "app/upload/page.js",
   "/ticket/page": "app/ticket/page.js",
   "/checkout/page": "app/checkout/page.js",
-  "/page": "app/page.js",
+  "/offers/page": "app/offers/page.js",
   "/confirmed/page": "app/confirmed/page.js",
-  "/offers/page": "app/offers/page.js"
+  "/page": "app/page.js"
 }
