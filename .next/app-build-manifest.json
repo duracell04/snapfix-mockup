@@ -40,6 +40,31 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/confirmed/page.js"
+    ],
+    "/pro/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/pro/page.js"
+    ],
+    "/prices/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/prices/page.js"
+    ],
+    "/how-it-works/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/how-it-works/page.js"
+    ],
+    "/cities/[citySlug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cities/[citySlug]/page.js"
+    ],
+    "/business/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/business/page.js"
     ]
   }
 }
