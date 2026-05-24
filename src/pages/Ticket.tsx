@@ -12,7 +12,7 @@ import { Info, MapPin, Sparkles } from "lucide-react";
 
 const TicketPage = () => {
   const searchParams = useSearchParams();
-  const ticketId = searchParams.get("t") || MOCK_TICKET_ID;
+  const ticketId = searchParams?.get("t") || MOCK_TICKET_ID;
   const ticket = getMockTicketById(ticketId) || MOCK_TICKET;
   const sku = getMockSkuById(ticket.suggestedSkuId);
   const city = getMockCityById(ticket.cityId);

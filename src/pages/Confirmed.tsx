@@ -18,8 +18,8 @@ import { CheckCircle2, Clock3, MapPin } from "lucide-react";
 
 const ConfirmedPage = () => {
   const searchParams = useSearchParams();
-  const ticketId = searchParams.get("t") || MOCK_TICKET_ID;
-  const offerId = searchParams.get("o");
+  const ticketId = searchParams?.get("t") || MOCK_TICKET_ID;
+  const offerId = searchParams?.get("o");
 
   const ticket = getMockTicketById(ticketId) || MOCK_TICKET;
   const offers = getMockOffersForTicket(ticket.id);

@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { CityData } from "@/data/cityData";
+import { CityData, cityData } from "@/data/cityData";
 import { 
   MapPin, Clock, Users, Star, DollarSign, Camera, 
   Wrench, CheckCircle2, TrendingUp 
 } from "lucide-react";
 
 type CityProps = {
-  city: CityData;
+  city?: CityData;
 };
 
-const City = ({ city }: CityProps) => {
+const City = ({ city = cityData.chicago }: CityProps) => {
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -99,7 +99,7 @@ const City = ({ city }: CityProps) => {
               ))}
             </div>
             <p className="text-center text-muted-foreground mt-8">
-              Don't see your neighborhood- We're expanding coverage daily.{" "}
+              Don't see your neighborhood? We're expanding coverage daily.{" "}
               <Link href="/" className="text-primary hover:underline">Join the waitlist</Link>
             </p>
           </div>
@@ -337,7 +337,7 @@ const City = ({ city }: CityProps) => {
         <section className="bg-gradient-to-br from-primary to-primary-hover py-20">
           <div className="container text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Ready to fix your door in {city.name}-
+              Ready to fix your door in {city.name}?
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Join hundreds of {city.name} residents who've discovered the easier way 

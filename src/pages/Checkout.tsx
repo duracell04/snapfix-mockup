@@ -20,8 +20,8 @@ import Link from "next/link";
 const CheckoutPage = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const ticketId = searchParams.get("t") || MOCK_TICKET_ID;
-  const offerId = searchParams.get("o");
+  const ticketId = searchParams?.get("t") || MOCK_TICKET_ID;
+  const offerId = searchParams?.get("o");
 
   const ticket = getMockTicketById(ticketId) || MOCK_TICKET;
   const offers = getMockOffersForTicket(ticket.id);

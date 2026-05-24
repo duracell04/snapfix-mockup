@@ -26,7 +26,7 @@ import Link from "next/link";
 const Offers = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const ticketId = searchParams.get("t") || MOCK_TICKET_ID;
+  const ticketId = searchParams?.get("t") || MOCK_TICKET_ID;
 
   const ticket = getMockTicketById(ticketId) || MOCK_TICKET;
   const offers = getMockOffersForTicket(ticket.id);
@@ -88,7 +88,7 @@ const Offers = () => {
                   Door: {ticket.doorType === "interior" ? "Interior" : "Exterior"} ·{" "}
                   {ticket.handleType === "lever" ? "Lever" : "Knob"}
                 </span>
-                <span>•</span>
+                <span>·</span>
                 <span>{ticket.accessNotes || "No notes"}</span>
               </div>
             </div>

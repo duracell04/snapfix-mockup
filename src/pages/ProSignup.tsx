@@ -101,7 +101,7 @@ const ProSignup = () => {
     setFormData(prev => ({
       ...prev,
       services: prev.services.includes(service)
-        - prev.services.filter(s => s !== service)
+        ? prev.services.filter(s => s !== service)
         : [...prev.services, service]
     }));
   };
@@ -110,7 +110,7 @@ const ProSignup = () => {
     setFormData(prev => ({
       ...prev,
       availability: prev.availability.includes(slot)
-        - prev.availability.filter(s => s !== slot)
+        ? prev.availability.filter(s => s !== slot)
         : [...prev.availability, slot]
     }));
   };
@@ -132,7 +132,7 @@ const ProSignup = () => {
                 <div 
                   key={s} 
                   className={`h-2 flex-1 rounded-full smooth-transition ${
-                    s <= step - 'bg-primary' : 'bg-muted'
+                    s <= step ? 'bg-primary' : 'bg-muted'
                   }`}
                 />
               ))}
@@ -222,7 +222,7 @@ const ProSignup = () => {
                   <h2 className="text-2xl font-bold">Service Area</h2>
                 </div>
                 <p className="text-muted-foreground">
-                  Where do you provide services-
+                  Where do you provide services?
                 </p>
               </div>
 
@@ -302,7 +302,7 @@ const ProSignup = () => {
                   <h2 className="text-2xl font-bold">Services & Experience</h2>
                 </div>
                 <p className="text-muted-foreground">
-                  What door hardware services do you offer-
+                  What door hardware services do you offer?
                 </p>
               </div>
 
@@ -636,7 +636,7 @@ const ProSignup = () => {
                   <div className="flex gap-2">
                     <Info className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <div className="space-y-1 text-sm">
-                      <p className="font-medium">What happens next-</p>
+                      <p className="font-medium">What happens next?</p>
                       <ul className="text-muted-foreground space-y-1">
                         <li>- We'll review your application within 2-3 business days</li>
                         <li>- Background check and credential verification</li>
