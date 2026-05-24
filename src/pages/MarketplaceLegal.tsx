@@ -130,7 +130,7 @@ const MarketplaceLegal = () => {
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-2xl font-bold">Questions-</h2>
+              <h2 className="text-2xl font-bold">Questions?</h2>
               <p className="text-muted-foreground leading-relaxed">
                 For more details, see our full{" "}
                 <a href="/legal/terms" className="text-primary hover:underline">Terms of Service</a> or 

@@ -124,7 +124,7 @@ const Index = () => {
         {/* Value props */}
         <section className="bg-muted/30 py-20">
           <div className="container">
-            <h2 className="text-4xl font-bold text-center mb-16">Why Snap'n'Fix-</h2>
+            <h2 className="text-4xl font-bold text-center mb-16">Why Snap'n'Fix?</h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="space-y-4">
                 <Clock className="h-12 w-12 text-primary" />
@@ -165,7 +165,7 @@ const Index = () => {
               <Link href="/cities/seattle" className="text-primary hover:underline font-medium">Seattle</Link>
             </div>
             <div className="pt-8">
-              <p className="text-muted-foreground mb-4">Not in your city yet-</p>
+              <p className="text-muted-foreground mb-4">Not in your city yet?</p>
               <div className="flex gap-2 max-w-md mx-auto">
                 <input 
                   type="email" 

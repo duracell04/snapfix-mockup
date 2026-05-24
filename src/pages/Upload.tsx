@@ -191,7 +191,7 @@ const Upload = () => {
 
                 {/* Symptom */}
                 <div className="space-y-3">
-                  <Label>What's the problem-</Label>
+                  <Label>What's the problem?</Label>
                   <RadioGroup defaultValue="latch">
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="latch" id="latch" />
@@ -236,7 +236,7 @@ const Upload = () => {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold">Almost there</h1>
                 <p className="text-muted-foreground">
-                  Where should the pro come, and how soon-
+                  Where should the Pro come, and how soon?
                 </p>
               </div>
 
@@ -256,7 +256,7 @@ const Upload = () => {
 
                 {/* Priority */}
                 <div className="space-y-3">
-                  <Label>When do you need this fixed-</Label>
+                  <Label>When do you need this fixed?</Label>
                   <RadioGroup defaultValue="standard">
                     <Card className="p-4 cursor-pointer hover:border-primary smooth-transition">
                       <div className="flex items-start space-x-3">

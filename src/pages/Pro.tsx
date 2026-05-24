@@ -168,7 +168,7 @@ const Pro = () => {
         {/* CTA */}
         <section className="container py-20">
           <Card className="p-12 text-center bg-primary text-primary-foreground">
-            <h2 className="text-4xl font-bold mb-4">Ready to take control-</h2>
+            <h2 className="text-4xl font-bold mb-4">Ready to take control?</h2>
             <p className="text-xl mb-8 opacity-90">
               Join hundreds of independent pros building their repair empire
             </p>

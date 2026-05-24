@@ -131,7 +131,7 @@ const Prices = () => {
 
           {/* Warranty info */}
           <div className="text-center space-y-4 pt-8">
-            <h3 className="text-2xl font-bold">What about warranties-</h3>
+            <h3 className="text-2xl font-bold">What about warranties?</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Each pro sets their own warranty terms (typically 14-45 days). You'll see the warranty details 
               before booking. If something goes wrong within the warranty period, your pro will make it right.
