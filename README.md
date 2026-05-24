@@ -129,6 +129,8 @@ Photo guidance + a handful of structured questions yield a structured job brief 
 
 This is reflected in both the mocked UX and the future backend design.
 
+For the fuller market thesis, PMF framing, competitor landscape, SWOT, B2B wedge, partner targets, and legal guardrails, see [docs/marketplace-strategy.md](docs/marketplace-strategy.md).
+
 ---
 
 ## 5. How the current mockup works (flows & screens)
