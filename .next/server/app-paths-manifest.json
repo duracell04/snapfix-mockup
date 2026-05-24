@@ -1,8 +1,0 @@
-{
-  "/offers/page": "app/offers/page.js",
-  "/checkout/page": "app/checkout/page.js",
-  "/page": "app/page.js",
-  "/business/page": "app/business/page.js",
-  "/cities/[citySlug]/page": "app/cities/[citySlug]/page.js",
-  "/confirmed/page": "app/confirmed/page.js"
-}
