@@ -131,6 +131,8 @@ This is reflected in both the mocked UX and the future backend design.
 
 For the fuller market thesis, PMF framing, competitor landscape, SWOT, B2B wedge, partner targets, and legal guardrails, see [docs/marketplace-strategy.md](docs/marketplace-strategy.md).
 
+For the newer tool-first strategy — Uber-style hyperlocal launch, Instagram-style utility before network, Airbnb-style trust, Houzy/Meisterpfad lessons, and diagnosis/DIY/Ask-a-Fixer flows — see [docs/tool-first-marketplace-insights.md](docs/tool-first-marketplace-insights.md).
+
 ---
 
 ## 5. How the current mockup works (flows & screens)
@@ -238,6 +240,9 @@ Short term (this repo):
 
 - Refine layout and copy.
 - Flesh out missing screens (/pro, /business, /support, /legal/marketplace, city landers).
+- Add a diagnosis result step between upload and offers.
+- Add an Ask a Fixer consult card/page.
+- Add DIY/tool-list output as an alternate path.
 - Add simple analytics stubs (console logs for key events).
 - Add more realistic mock data for multiple cities and Pros.
 
